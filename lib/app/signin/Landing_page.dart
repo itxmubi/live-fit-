@@ -26,8 +26,12 @@ class LandingPage extends StatelessWidget {
             );
           }
           return Scaffold(
-            body: Center(
-              child: CircularProgressIndicator(),
+            body: Column(
+              children: [
+                Center(
+                  child: CircularProgressIndicator(),
+                ),
+              ],
             ),
           );
         });
