@@ -20,6 +20,7 @@ class CustomRaisedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: height,
+      // ignore: deprecated_member_use
       child: RaisedButton(
         child: child,
         color: color,

@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Home Page"),
         actions: [
-          FlatButton(
+          TextButton(
             onPressed: () {
               _signout();
             },

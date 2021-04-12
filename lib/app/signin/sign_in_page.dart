@@ -11,6 +11,7 @@ class SignInPage extends StatelessWidget {
   Future<void> _signinannonimously() async {
     try {
       await auth.signInAnnonimously();
+      print("tr run");
     } catch (e) {
       print(e.toString());
     }
@@ -26,6 +27,7 @@ class SignInPage extends StatelessWidget {
 
   Future<void> _signInWithFacebook() async {
     try {
+      print("facebook button pressed");
       await auth.signInWithFacebook();
     } catch (e) {
       print(e.toString());

@@ -17,6 +17,7 @@ class LandingPage extends StatelessWidget {
           if (snapshot.connectionState == ConnectionState.active) {
             final User user = snapshot.data;
             if (user == null) {
+              print("this is user loggid in $user");
               return SignInPage(
                 auth: auth,
               );
@@ -26,19 +27,10 @@ class LandingPage extends StatelessWidget {
             );
           }
           return Scaffold(
-            body: Column(
-              children: [
-                Center(
-                  child: CircularProgressIndicator(),
-                ),
-              ],
+            body: Center(
+              child: CircularProgressIndicator(),
             ),
           );
         });
   }
 }
-
-//C:\Users\Mubashir Nawaz\.android
-//
-
-// keytool -exportcert -alias androiddebugkey -keystore "C:\Users\Mubashir Nawaz\.android\debug.keystore" | "C:\openssl-0.9.8k_WIN32\bin\openssl" sha1 -binary | "C:\openssl-0.9.8k_WIN32\bin\openssl" base64
